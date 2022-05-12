@@ -78,6 +78,7 @@ function searchDate(e) {
     let dateValue = dateInput.value;
     date = new Date(dateValue).toLocaleDateString('nl-nl', { day:"numeric", month:"long", year:"numeric"});
     const weekDay = document.querySelectorAll('section button h4');
+    const totalDays = document.querySelectorAll('section button');
     weekDay.forEach(day => {
         if(day.textContent.includes(date)) {
             generalEl.forEach(element => element.classList.remove('hide'));
@@ -89,7 +90,11 @@ function searchDate(e) {
                     weekCounter();
                 }
             })
-            day.focus();
+            totalDays.forEach(button => {
+                if(button.textContent.trim().includes(date)) {
+                    button.focus();
+                }
+            })
         }
     });
 }
