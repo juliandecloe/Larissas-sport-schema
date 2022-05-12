@@ -9,7 +9,7 @@ Voor test 1 hebben we nog niet heel veel kunnen maken omdat we vrij weinig infor
 
 ![voorbeeld van de webpagina waarin een maandoverzicht te zien is van mei](img/maandoverzicht.png)
 
-#### Ingevingen
+#### Algemene inzichten
 - Larissa is niet helemaal blind. Ze ziet nog wel contrasten en daardoor vormen. Ze heeft een voorkeur voor een donkere achtergrond met  daarover felle kleuren. Ze houdt van de kleur oranje. Deze informatie kan handig zijn voor het kleurenschema van de website.
 - Aangezien Larissa het scherm nog wel kan zien, is het voor haar ook prettig om wat te zien gebeuren als ze naar een website kijkt. Het geeft haar een extra houvast. Dit maakt het voor haar wel belangrijke feedback.
 - Ze is erg zelfstandig. Ze woont dan ook alleen met een hulphond. Ook haar laptop kan ze helemaal zelfstandig besturen en gebruiken.
@@ -18,14 +18,9 @@ Voor test 1 hebben we nog niet heel veel kunnen maken omdat we vrij weinig infor
 - Ze heeft een braille leesregel voor haar laptop, maar ze gebruikt hem eigenlijk nooit.
 - Ze is erg visueel ingesteld.
 - Een lettertype zo simpel mogelijk is voor haar prettig zodat ze nog wel iets van het lettertype kan zien.
-- Gebruikt Training Peaks (coach maakt geen schema’s voor haar)
-- Larissa heeft vaste trainingen in de week, de rest is afstemmen per periode. Ook deels op gevoel trainen. Haar sportschema ziet er wekelijks deels hetzelfde eruit.
 - Larissa is totaal niet geordend. Thuis laat ze alles overal slingeren. 'Als het niet op mijn rommelhoop ligt, ben ik het kwijt'.
-- Ze vindt het prettig om in een schema te zien hoeveel ze per dag moet doen en hoelang.
 - Ze wil de informatie op een website zo snel mogelijk krijgen. Ze neem niet de tijd om heel lang op een element te zitten.
-- Normaal heeft ze een sportschema per wedstrijdseizoen. Dus tot het volgende kampioenschap.
 - Ze kan onderdelen zien, dus veel ruimte tussen html elementen is voor haar prettig. Dan kan ze nog een soort structuur in de website zien.
-- Ze gebruikt altijd tab om door een website te gaan. Ze gebruikt eigenlijk nooit de pijltjes. Daarnaast vindt ze het ook prettig om dingen in een website op te zoeken in een inputveld. Zo hoeft ze niet de hele website af om iets te vinden.
 
 
 #### Testen
@@ -36,3 +31,61 @@ Voor test 1 hebben we nog niet heel veel kunnen maken omdat we vrij weinig infor
 
 #### Conclusie
 Een maandoverzicht is niet helemaal geschikt voor haar. Het zijn veel elementen die dicht op elkaar zitten en er komt al snel meer informatie naar boven dan ze nodig heeft. Mijn focus wordt om te kijken naar een weekschema en deze zo prettig en ruim mogelijk te weergeven.
+
+### Test 2
+Voor test 2 heb ik een weekoverzicht gemaakt. Helaas had ik slechts een ochtend om eraan te werken waardoor ik geen volledig werkend prototype had kunnen tonen, maar slechts een niet interactieve voorpagina waar ze nog wel doorheen kon tabben.
+
+![voorbeeld van de website waarin een weekoverzicht te zien is van mei](img/weekoverzicht.png)
+
+#### Algemene inzichten
+- Normaal heeft ze een sportschema per wedstrijdseizoen. Dus tot het volgende kampioenschap.
+- Gebruikt Training Peaks (coach maakt geen schema’s meer voor haar)
+- Larissa heeft vaste trainingen in de week, de rest is afstemmen per periode. Ook deels op gevoel trainen. Haar sportschema ziet er wekelijks deels hetzelfde eruit.
+- Ze vindt het prettig om in een schema te zien hoeveel ze per dag moet doen en hoelang.
+- Ze gebruikt altijd tab om door een website te gaan. Ze gebruikt eigenlijk nooit de pijltjes. Daarnaast vindt ze het ook prettig om dingen in een website op te zoeken in een inputveld. Zo hoeft ze niet de hele website af om iets te vinden.
+
+#### Testen
+- Heel veel mensen die bij Larissa zitten hadden een klein onopvallend foutje gemaakt. De taal van de website op Nederlands zetten. Hier wees zij op.
+- Ze vond een weekoverzicht prettig. Zo kan ze snel de details van een dag in, maar alsnog ook makkelijk elke datum vinden.
+- Ze heeft liever in de weeknavigatie dat de week in het midden staat i.p.v rechts. Zo kan ze makkelijker de week weten als ze op vorige of volgende drukt.
+- Ze weet nooit welk weeknummer het is. Misschien is het daarom handig om gewoon de eerste en laatste dag van de week te noemen. Bijvoorbeeld 1 april tot 7 april.
+- Het zou ook fijn zijn als de weeknavigatie nogmaals aan de onderkant staat. Dan hoeft ze niet terug naar boven te tabben.
+
+#### Conclusie
+Ik ben goed op weg. Ik denk dat een weekoverzicht voor haar vrij prettig is. Naast de feedback die ze gaf tijdens het testen, ga ik ook luisteren naar dingen die ze in het algemeen heeft verteld. Een zoekfunctie zodat ze naar een specifieke datum kan zoeken lijkt mij een goede toevoeging.
+
+### Test 3
+Voor test 3 ben ik verder gaan werken aan het weekoverzicht. Ik heb een functie gemaakt waardoor zij kan zoeken naar elke datum door de toets 'f' in te drukken. Zo kan ze altijd zoeken naar een datum, desondanks haar positie in de website.
+
+![een functie binnen de website waarmee je naar een datum kan zoeken](img/searchdate.png)
+
+#### Testen
+- Ze vond het idee van een datum kiezen door een toets in te drukken een ontzettend goed idee. Haar screenreader programma 'JAWS' gebruikt wel al heel veel toetsen. Daarom is een toetscombinatie zoals `alt + ctrl + f` of `alt + f` beter.
+- Ook moeten er meer instructies komen over welke toets ze moet indrukken. Dat ontbreekt nu.
+- Er mist nog wat contrast bij focus. Nu gebeurd er nog wat weinig op het scherm voor haar.
+- Wat belangrijk hierbij is is een wedstrijdenoverzicht zodat ze weet waarvoor ze traint.
+- Meer details over de training vrijgeven op klik.
+- Wat prettig zou zijn is een functie om zelf trainingen toe te voegen aan een dag.
+
+#### Conclusie
+Larissa ging erg vloeiend door de website heen en begreep direct waar elk gebied voor bedoeld was. Ze mistte nog een aantal dingen waar ik nu niet de tijd meer voor heb om nog toe te voegen. Deze zijn echter zeker genoteerd en komt mooi in mijn toekomstplan te staan.
+
+## Eindconcept
+De oplossing voor Larissa's probleem is een website met een weekkalender waar ze trainingen kan inzien en toevoegen.
+
+![Larissa's sportschema website](img/weekoverzicht2.png)
+![functie voor datum zoeken](img/searchdata2.png)
+
+### Huidige features
+- Druk `alt + f` in om direct een datum te kunnen zoeken.
+- Een weekoverzicht met wat voor training er is.
+- 2 navigatiebalken om boven- en onderaan de pagina naar een andere week te kunnen gaan.
+
+### Features waar ik geen tijd voor had (toekomstvisie)
+- Wedstrijdenoverzicht
+- Meer details over elke training als je erop klikt
+- Nieuwe training toevoegen
+
+
+
+
