@@ -74,7 +74,7 @@ Larissa ging erg vloeiend door de website heen en begreep direct waar elk gebied
 De oplossing voor Larissa's probleem is een website met een weekkalender waar ze trainingen kan inzien en toevoegen.
 
 ![Larissa's sportschema website](img/weekoverzicht2.png)
-![functie voor datum zoeken](img/searchdata2.png)
+![functie voor datum zoeken](img/searchdate2.png)
 
 ### Huidige features
 - Druk `alt + f` in om direct een datum te kunnen zoeken.
