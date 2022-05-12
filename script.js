@@ -89,6 +89,7 @@ function searchDate(e) {
                     weekCounter();
                 }
             })
+            day.focus();
         }
     });
 }
