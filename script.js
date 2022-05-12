@@ -68,6 +68,7 @@ function toggleDate(e) {
             generalEl.forEach(element => { element.classList.remove('hide') })
             dateForm.classList.add('hide');
             toggleForm = false;
+            weekCounter();
         }
     } 
 }
@@ -76,7 +77,7 @@ function searchDate(e) {
     e.preventDefault();
     let dateValue = dateInput.value;
     date = new Date(dateValue).toLocaleDateString('nl-nl', { day:"numeric", month:"long", year:"numeric"});
-    const weekDay = document.querySelectorAll('section div h4');
+    const weekDay = document.querySelectorAll('section button h4');
     weekDay.forEach(day => {
         if(day.textContent.includes(date)) {
             generalEl.forEach(element => element.classList.remove('hide'));
@@ -94,3 +95,4 @@ function searchDate(e) {
 
 window.addEventListener('keydown', toggleDate);
 dateForm.addEventListener('submit', searchDate);
+
