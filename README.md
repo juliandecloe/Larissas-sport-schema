@@ -29,7 +29,7 @@ Voor test 1 hebben we nog niet heel veel kunnen maken omdat we vrij weinig infor
 
 
 #### Testen
-- Voor het maandoverzicht heb ik elke dag in een `<ul>` gewrapt waarin elke dag een `<li>` is. De screenreader las het voor als: 'lijst, 31 elementen'. Dat kwam voor haar nogal overwelmend over. Het gebruik van een lijst is daarom niet de beste optie.
+- Voor het maandoverzicht heb ik de dagen in een `<ul>` gewrapt waarin elke dag een `<li>` is. De screenreader las het voor als: 'lijst, 31 elementen'. Dat kwam voor haar nogal overwelmend over. Het gebruik van een lijst is daarom niet de beste optie.
 - De screenreader leest van links naar rechts, dus het las eerst 'Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag' voordat deze naar de dagen zelf ging. Na veel elementen kwam ze uiteindelijk aan bij de dagen zelf. Ze vertelde dat het voor haar te lang duurt en ze liever zo snel mogelijk bij de dagen terecht komt.
 - De tekst was te klein. Zoals eerder vernoemd mag alles lekker ruim en groot aangegeven worden.
 - De kleuren zijn nu zwart op wit, andersom is prettiger.
