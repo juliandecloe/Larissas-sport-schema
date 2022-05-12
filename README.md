@@ -86,6 +86,22 @@ De oplossing voor Larissa's probleem is een website met een weekkalender waar ze
 - Meer details over elke training als je erop klikt
 - Nieuwe training toevoegen
 
+### Design Principles
+
+#### Study Situation
+Larissa heeft een hele specifieke manier waarop zij haar laptop gebruikt en hoe zij op dingen reageert. Daarom was het belangrijk om goed haar gedrag te observeren en haar te vragen hoe zij er het liefst mee om gaat. Ik kan niet zomaar uitgaan van wat haar gedrag is en daarop mijn design baseren.
+
+#### Ignore Conventions
+Ik ben met HTML gewend om heel semantisch te werken. Alles moet netjes volgens de HTML regels voor een zo strak mogelijke code. Maar voor Larissa is dat helemaal niet goed. Larissa is een vrij druk en ongeduldig persoon. Zij wil zo snel mogelijk informatie krijgen. Sommige HTML elementen zorgen ervoor dat haar flow onderbroken wordt. Daarom moest ik afstappen van de semantiek en een vreemdere code schrijven die voor haar beter werkt.
+
+#### Prioritise Identity
+In plaats van dat ik zelf een toetscombinatie voor het zoeken naar een datum verzon, vroeg ik juist aan Larissa wat zij een prettige toetscombinatie vindt en die nog beschikbaar is. Ik design voor Larissa. Daarom heeft Larissa veel meer zeg wat er gebeurd met de website dan ik. Ik probeerde haar daarom zo goed mogelijk te betrekken bij ontwerpkeuzes.
+
+#### Add Nonsense
+Het enige speelse (en onnodige) wat ik heb kunnen toevoegen is de kleur oranje. Ze is Nederlands kampioen en houdt daarom van deze kleur. Ik had heel graag meer speelse elementen willen toevoegen, maar mijn tijd was op. Mogelijke speelse dingen die ik had kunnen toevoegen zouden zijn:
+- Geluid van een fluidje als ze een nieuwe training toevoegd
+- Geluid van gejuig als een dag voorbij is.
+- Meer wisselingen in kleuren
 
 
 
