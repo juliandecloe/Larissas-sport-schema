@@ -1,10 +1,16 @@
 const weekSections = document.querySelectorAll('section');
 const navBtn = document.querySelectorAll('nav button');
-const weekText = document.querySelector('nav h3');
+const weekText = document.querySelectorAll('nav h3');
 let lastWeek;
 let weekCount = 1;
 
 navBtn[0].addEventListener('click', () => {
+    if(weekCount > 0) {
+        weekCount--
+    }
+    weekCounter();
+})
+navBtn[2].addEventListener('click', () => {
     if(weekCount > 0) {
         weekCount--
     }
@@ -16,75 +22,75 @@ navBtn[1].addEventListener('click', () => {
     }
     weekCounter();
 })
+navBtn[3].addEventListener('click', () => {
+    if(weekCount < 3) {
+        weekCount++
+    }
+    weekCounter();
+})
 
 function weekCounter() {
     weekSections.forEach(week => { week.classList.add('hide') });
     weekSections[weekCount].classList.remove('hide');
     if(weekCount === 0) {
-        weekText.textContent = '2 mei tot 8 mei';
+        weekText.forEach(text => {
+            text.textContent = '2 mei tot 8 mei';
+        })
     } else if (weekCount === 1) {
-        weekText.textContent = '9 mei tot 15 mei';
+        weekText.forEach(text => {
+            text.textContent = '9 mei tot 15 mei';
+        })
     } else if (weekCount === 2) {
-        weekText.textContent = '16 mei tot 22 mei';
+        weekText.forEach(text => {
+            text.textContent = '16 mei tot 22 mei';
+        })
     } else if (weekCount === 3) {
-        weekText.textContent = '23 mei tot 29 mei';
+        weekText.forEach(text => {
+            text.textContent = '23 mei tot 29 mei';
+        })
     }
 }
 
-// const mainEl = document.querySelector('main');
-// let date = new Date();
-// // date.setDate(date.getDate - 1);
+const dateForm = document.querySelector('main form');
+const dateInput = document.querySelector('main form input')
+const generalEl = document.querySelectorAll('header, footer');
+let toggleForm;
 
-// createCalendar();
+function toggleDate(e) {
+    if(e.altKey === true && e.keyCode == 70) {
+        if(!toggleForm) {
+            generalEl.forEach(element => { element.classList.add('hide') })
+            weekSections.forEach(element => { element.classList.add('hide') })
+            dateForm.classList.remove('hide');
+            document.querySelector('main label').focus();
+            toggleForm = true;
+        } else {
+            generalEl.forEach(element => { element.classList.remove('hide') })
+            dateForm.classList.add('hide');
+            toggleForm = false;
+        }
+    } 
+}
 
-// function createCalendar() {
-//     date = getMonday(new Date())
-//     let intervalCount = 0;
-//     let createDays = setInterval(function () {
-//         mainEl.insertAdjacentHTML('beforeend', `
-//             <article>
-//                 <h3>${new Intl.DateTimeFormat('nl', { dateStyle: 'full' }).format(date)}</h3>
-//             </article>
-//         `);
-//         date.setDate(date.getDate() + 1)
-//         if (++intervalCount === 7) {
-//             window.clearInterval(createDays);
-//             intervalCount = 0;
-//         }
-//     });  
-// }
+function searchDate(e) {
+    e.preventDefault();
+    let dateValue = dateInput.value;
+    date = new Date(dateValue).toLocaleDateString('nl-nl', { day:"numeric", month:"long", year:"numeric"});
+    const weekDay = document.querySelectorAll('section div h4');
+    weekDay.forEach(day => {
+        if(day.textContent.includes(date)) {
+            generalEl.forEach(element => element.classList.remove('hide'));
+            dateForm.classList.add('hide');
+            weekSections.forEach(section => {
+                if(section.textContent.trim().includes(date)) {
+                    let checkSection = Array.prototype.slice.call(weekSections);
+                    weekCount = checkSection.indexOf(section);
+                    weekCounter();
+                }
+            })
+        }
+    });
+}
 
-// function getMonday(d) {
-//     d = new Date(d);
-//     let day = d.getDay(),
-//         diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
-//     return new Date(d.setDate(diff));
-// }
-
-//Grab day of the week from local computer
-
-
-
-
-// const btnNext = document.querySelector('')
-// let weekChecker = 0;
-
-// mainEl[weekChecker].classList.remove('hide');
-
-// btnNext.addEventlistener('click', () => {
-//     weekChecker++;
-//     if(weekChecker > 4) {
-//         weekChecker = 4;
-//     }
-//     mainEl.forEach(item => item.classList.add('hide'));
-//     mainEl[weekChecker].classList.remove('hide');
-// });
-
-// btnPrev.addEventlistener('click', () => {
-//     weekChecker--;
-//     if(weekChecker < 0) {
-//         weekChecker = 0;
-//     }
-//     mainEl.forEach(item => item.classList.add('hide'));
-//     mainEl[weekChecker].classList.remove('hide');
-// });
+window.addEventListener('keydown', toggleDate);
+dateForm.addEventListener('submit', searchDate);

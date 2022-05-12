@@ -15,6 +15,7 @@
 <body>
     <header>
         <h1 tabindex="0">Sportschema Larissa Klaassen</h1>
+        <p tabindex="0">Om zelf een datum te kiezen druk alt + f</p>
         <nav>
             <button>Vorige week</button>
             <h3 tabindex="0">9 mei tot 15 mei</h3>
@@ -142,8 +143,20 @@
                 <p>Geen training</p>
             </div>
         </section>
+        <form class="hide">
+            <label tabindex="0" for="date-picker">Zoek naar een specifieke datum</label>
+            <p tabindex="0">Om dit menu te verlaten druk weer alt + f</p>
+            <input type="date" id="date-picker">
+            <button>Zoeken</button>
+        </form>
     </main>
-
+    <footer>
+        <nav>
+            <button>Vorige week</button>
+            <h3 tabindex="0">9 mei tot 15 mei</h3>
+            <button>Volgende week</button>
+        </nav>
+    </footer>
     <script src="script.js"></script>
 </body>
 
